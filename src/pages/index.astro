@@ -1,0 +1,215 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import GuiaCard from "@/components/GuiaCard.astro";
+
+import { guias } from "@/const/Guias";
+import { guiasImages } from "@/const/GuiasImages";
+import GuiaImageCard from "@/components/GuiaImageCard.astro";
+---
+
+<Layout>
+  <header class="overflow-x-hidden">
+    <div class="relative z-10 mt-40 py-10">
+      <img
+        src="/assets/MARCO.svg"
+        alt="Imagen de marco"
+        class="absolute top-0 left-0 w-full h-full z-0 object-cover md:object-contain"
+      />
+      <div
+        class="w-full flex justify-center relative text-[5rem] font-rasegard md:text-[9rem] lg:text-[12rem] xl:text-[22rem] -mt-20 md:-mt-28 lg:-mt-36 xl:-mt-64"
+      >
+        Oddyssey
+
+        <div
+          class="absolute -bottom-5 right-16 md:right-28 lg:right-40 xl:right-96"
+        >
+          <img
+            src="/assets/DESTELLO.svg"
+            alt="Icono de destello"
+            class="size-20 md:size-32 lg:size-40 xl:size-72"
+          />
+        </div>
+      </div>
+
+      <section class="mt-24 overflow-hidden">
+        <div class="w-[70%] mx-auto">
+          <p
+            class="text-center text-[1.5rem] font-robotika md:w-3/4 mx-auto lg:text-[1.6rem] xl:text-[2rem] xl:w-1/2"
+          >
+            Hace años, un planeta cuyo nombre el tiempo ya no recuerda fue
+            destruido por una fuerza oscura que se cernía sobre la galaxia.
+          </p>
+        </div>
+        <div class="mt-10 relative z-10">
+          <img
+            src="/assets/NUBE.webp"
+            alt="Imagen de nube"
+            class="w-full h-auto float"
+          />
+        </div>
+        <div class="mt-20 w-[70%] mx-auto space-y-10 lg:w-[60%] xl:w-[45%]">
+          <p
+            class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+          >
+            En un último intento por proteger lo que quedaba de su mundo —y
+            darle oportunidad a otros—,
+          </p>
+          <p
+            class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+          >
+            Seis seres mágicos escaparon y llegaron a la Tierra:
+          </p>
+          <p
+            class="text-center font-bold text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+          >
+            Rizuko, Songyongdoli, Urakbam, Tonyangdeok, Ddolbyeong y
+            Meongnyongie.
+          </p>
+          <p
+            class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+          >
+            Su misión era clara: encontrar a seis humanos capaces de heredar su
+            luz y proteger este planeta antes de que la oscuridad también lo
+            alcanzara.
+          </p>
+          <ul>
+            <li
+              class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+            >
+              <span class="font-bold">Rizuko,</span> bondadosa y optimista, <span
+                class="font-bold">eligió a Shotaro.</span
+              >
+            </li>
+            <li
+              class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+            >
+              <span class="font-bold">Songyongdoli,</span> divertido pero estoico,
+              <span class="font-bold">eligió a Eunseok.</span>
+            </li>
+            <li
+              class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+            >
+              <span class="font-bold">Urakbam,</span> fuerte y resiliente, <span
+                class="font-bold">eligió a Sungchan.</span
+              >
+            </li>
+            <li
+              class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+            >
+              <span class="font-bold">Tonyangdeok,</span> humilde y adorable,<span
+                class="font-bold"
+              >
+                eligió a Wonbin.</span
+              >
+            </li>
+            <li
+              class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+            >
+              <span class="font-bold">Ddolbyeong,</span> único e impredecible, <span
+                class="font-bold">eligió a Sohee.</span
+              >
+            </li>
+            <li
+              class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+            >
+              <span class="font-bold">Meongnyongie,</span> valiente y leal, <span
+                class="font-bold">eligió a Anton.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="mt-20 overflow-x-hidden">
+    <h2
+      class="text-[3.4rem] font-rasegard text-center leading-9 md:text-[3.6rem] lg:text-[4.5rem] xl:text-[8.5rem]"
+    >
+      ¡Aqui comienza tu odisea!
+    </h2>
+    <div class="mt-16 flex justify-center items-center gap-3 md:gap-0 xl:mt-20">
+      <img src="/assets/VIDEO.svg" alt="Icono de video" class="w-24 h-24" />
+      <a
+        href="#"
+        class="text-[1.2rem] block w-[60%] md:w-fit hover:underline font-robotika xl:text-[1.5rem]"
+      >
+        Da click aqui para escuchar tu opening:</a
+      >
+    </div>
+    <div class="mt-16">
+      <h2
+        class="text-[1.5rem] font-robotika text-center font-bold xl:text-[1.8rem]"
+      >
+        Elige a tu guia para esta aventura:
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 w-[95%] mx-auto mt-16 gap-10"
+      >
+        {guiasImages.map((guiaImage) => <GuiaImageCard guia={guiaImage} />)}
+      </div>
+
+      <section class="mt-20 w-full flex flex-col gap-10">
+        {guias.map((guia, index) => <GuiaCard guia={guia} index={index} />)}
+      </section>
+    </div>
+  </main>
+
+  <section class="mt-24 w-[90%] mx-auto">
+    <p
+      class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
+    >
+      ¡Gracias por llegar hasta aquí, BRIIZE! Ten tu var i ta de transformación.
+      ¡Y bienvenida al equipo!
+    </p>
+    <p
+      class="text-center text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem] mt-10"
+    >
+      “Aunque aún no tengas uno claro, cuando llegue el momento, ve tras tu
+      propia Odisea. Nosotros, RIIZE, siempre estaremos apoyándote. “
+    </p>
+    <p
+      class="text-center font-black text-[1.5rem] font-robotika lg:text-[2rem] xl:text-[2.5rem] mt-5"
+    >
+      Rizze will continue to rise
+    </p>
+    <div class="flex justify-end gap-2 items-center">
+      <div
+        class="w-[30px] h-[2px] bg-black -translate-x-12 lg:-translate-x-36 xl:-translate-x-96"
+      >
+      </div>
+      <p
+        class="text-[1.3rem] font-robotika font-black -translate-x-12 lg:-translate-x-36 lg:text-[1.5rem] xl:-translate-x-96 xl:text-[1.8rem]"
+      >
+        Lee Anton
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  @keyframes float {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(10px, -5px);
+    }
+    50% {
+      transform: translate(0px, -10px);
+    }
+    75% {
+      transform: translate(-10px, -5px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>

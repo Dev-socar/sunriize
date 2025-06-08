@@ -1,0 +1,22 @@
+---
+import type { SocialMedia } from '@/types/SocialMedia'
+
+interface Props {
+  socialMedia: SocialMedia
+}
+
+const { socialMedia } : Props = Astro.props
+---
+
+<div>
+  <a href={socialMedia.url} class="flex flex-col items-center gap-3 font-robotika w-fit lg:text-lg xl:text-2xl">
+    <img
+      src={socialMedia.icono}
+      alt={`Icono de ${socialMedia.nombre}`}
+      width="40"
+      height="40"
+      class="w-14 h-14"
+    />
+    {socialMedia.nombre}
+  </a>
+</div>

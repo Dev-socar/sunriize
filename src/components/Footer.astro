@@ -1,0 +1,30 @@
+---
+import { LinksSocialMedia } from "@/const/LinksSocialMedia";
+import SocialCard from "@/components/SocialCard.astro";
+---
+
+<footer class="mt-16 p-5 flex justify-between md:w-[70%] mx-auto xl:w-1/2">
+  <div class="flex gap-3 md:gap-6">
+    {
+      LinksSocialMedia.map((socialMedia) => (
+        <SocialCard socialMedia={socialMedia} />
+      ))
+    }
+  </div>
+
+  <div>
+    <a
+      href="#"
+      class="flex items-center gap-3 font-robotika lg:text-lg xl:text-2xl"
+    >
+      <img
+        src="/assets/VIDEO.svg"
+        alt="Icono de un boton play"
+        width="40"
+        height="40"
+        class="w-14 h-14"
+      />
+      Escucha aqui <br /> tu ending
+    </a>
+  </div>
+</footer>

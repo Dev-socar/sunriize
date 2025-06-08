@@ -1,0 +1,65 @@
+---
+import { type Guia } from "@/types/Guia";
+interface Props {
+  guia: Guia;
+  index: number;
+}
+const { guia, index } = Astro.props;
+---
+
+<article id={guia.tag}>
+  <h2
+    class={`text-[2.2rem] font-rasegard leading-7 md:leading-12  ${index % 2 === 0 ? "text-left" : "text-right"} md:text-[4.5rem] xl:text-[5.5rem] xl:leading-16`}
+  >
+    {guia.alias}
+  </h2>
+  <div class="bg-black p-5 font-robotika">
+    <div class="border-2 border-white rounded-2xl p-5">
+      <div
+        class={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} gap-5 lg:gap-10`}
+      >
+        <div
+          class="flex flex-col items-center gap-2 flex-1 lg:grow-0 lg:basis-auto"
+        >
+          <p class="uppercase text-white text-center text-[9px] md:text-xs">
+            Soundtrack de transformacion
+          </p>
+          <div class="size-32 bg-white md:size-40"></div>
+          <div class="flex flex-col gap-3">
+            <p class="block text-white text-sm font-black md:text-base lg:hidden">
+              Gustos: <span class="font-normal">{guia.gustos}</span>
+            </p>
+            <p class="block text-white text-sm font-black md:text-base lg:hidden">
+              Disgustos: <span class="font-normal">{guia.disgustos}</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2 flex-1 justify-center">
+          <h2
+            class={`text-white font-black text-2xl ${index % 2 === 0 ? "text-left" : "text-right"} md:text-3xl lg:text-4xl xl:text-5xl`}
+          >
+            {guia.nombre}
+          </h2>
+          <p
+            class={`text-white text-sm md:text-lg ${index % 2 === 0 ? "text-left" : "text-right"} xl:text-2xl`}
+          >
+            {guia.descripcion}
+          </p>
+          <div class="flex gap-3">
+            <p
+              class="hidden text-white text-sm font-black md:text-base lg:block xl:text-xl"
+            >
+              Gustos: <span class="font-normal">{guia.gustos}</span>
+            </p>
+            <p
+              class="hidden text-white text-sm font-black md:text-base lg:block xl:text-xl"
+            >
+              Disgustos: <span class="font-normal">{guia.disgustos}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

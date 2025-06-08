@@ -1,0 +1,83 @@
+---
+import { type GuiaImage } from "@/types/GuiaImage";
+interface Props {
+  guia: GuiaImage;
+}
+const { guia } = Astro.props;
+---
+
+<div class="card-container">
+  <article class="card">
+    <img src={guia.imageBg} alt={`Imagen de ${guia.tag}`} />
+    <img src={guia.imageHover} alt={`Imagen de ${guia.tag}`} />
+  </article>
+  <a
+    href=`/#${guia.tag}`
+    class="mt-8 text-center inline-block w-full font-robotika text-lg font-semibold underline"
+  >
+    {guia.tag}
+  </a>
+</div>
+
+<style>
+  .card-container {
+    overflow: hidden;
+  }
+  .card {
+    position: relative;
+    width: 70%;
+    height: 600px;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    .card {
+      width: 90%;
+    }
+      
+  }
+  .card img:first-child {
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .card img:last-child {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  .card:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0px);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0) 95%
+    );
+    opacity: 0;
+  }
+  .card:hover::before {
+    opacity: 1;
+  }
+  .card:hover img:last-child {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  .card:hover .card-container > p {
+    transform: translateY(10%);
+  }
+</style>

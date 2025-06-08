@@ -1,0 +1,21 @@
+---
+import Footer from '@/components/Footer.astro';
+import "./src/styles/global.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sunriize</title>
+  </head>
+  <body
+    class="bg-[url('/assets/fondo-mobile.webp')] md:bg-[url('/assets/fondo.webp')] bg-fixed md:bg-cover  bg-center bg-no-repeat pb-10 overflow-x-hidden"
+  >
+    <slot />
+    <Footer/>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+@layer utilities {
+  .font-rasegard {
+    font-family: "Rasegard";
+    font-weight: 400;
+  }
+  .font-robotika {
+    font-family: "Robotika";
+  }
+}

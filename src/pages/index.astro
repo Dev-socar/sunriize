@@ -2,6 +2,8 @@
 import Layout from "@/layouts/Layout.astro";
 import GuiaCard from "@/components/GuiaCard.astro";
 
+import Marquee from "@/components/Marquee.astro";
+
 import { guias } from "@/const/Guias";
 import { guiasImages } from "@/const/GuiasImages";
 import GuiaImageCard from "@/components/GuiaImageCard.astro";
@@ -9,6 +11,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
 
 <Layout>
   <header class="overflow-x-hidden">
+    <Marquee />
     <div class="relative z-10 mt-40 py-10">
       <img
         src="/assets/MARCO.svg"

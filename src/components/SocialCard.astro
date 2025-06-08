@@ -1,15 +1,22 @@
 ---
-import type { SocialMedia } from '@/types/SocialMedia'
+import type { SocialMedia } from "@/types/SocialMedia";
 
 interface Props {
-  socialMedia: SocialMedia
+  socialMedia: SocialMedia;
 }
 
-const { socialMedia } : Props = Astro.props
+const { socialMedia }: Props = Astro.props;
 ---
 
 <div>
-  <a href={socialMedia.url} class="flex flex-col items-center gap-3 font-robotika w-fit lg:text-lg xl:text-2xl">
+  <a
+    href={socialMedia.url}
+    class="flex flex-col items-center gap-3 font-robotika w-fit lg:text-lg xl:text-2xl"
+    target="_blank"
+    rel="noopener noreferrer"
+    title={`Visitar enlace de ${socialMedia.nombre}`}
+    aria-label={`Visitar enlace de ${socialMedia.nombre}`}
+  >
     <img
       src={socialMedia.icono}
       alt={`Icono de ${socialMedia.nombre}`}

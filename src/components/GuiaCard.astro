@@ -26,10 +26,14 @@ const { guia, index } = Astro.props;
           </p>
           <div class="size-32 bg-white md:size-40"></div>
           <div class="flex flex-col gap-3">
-            <p class="block text-white text-sm font-black md:text-base lg:hidden">
+            <p
+              class="block text-white text-sm font-black md:text-base lg:hidden"
+            >
               Gustos: <span class="font-normal">{guia.gustos}</span>
             </p>
-            <p class="block text-white text-sm font-black md:text-base lg:hidden">
+            <p
+              class="block text-white text-sm font-black md:text-base lg:hidden"
+            >
               Disgustos: <span class="font-normal">{guia.disgustos}</span>
             </p>
           </div>
@@ -46,7 +50,9 @@ const { guia, index } = Astro.props;
           >
             {guia.descripcion}
           </p>
-          <div class="flex gap-3">
+          <div
+            class={`flex gap-3 ${index % 2 === 0 ? "justify-start" : "justify-end"} lg:gap-10`}
+          >
             <p
               class="hidden text-white text-sm font-black md:text-base lg:block xl:text-xl"
             >

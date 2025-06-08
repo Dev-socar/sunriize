@@ -20,13 +20,13 @@ const { guia } = Astro.props;
 </div>
 
 <style>
-  /* .card-container {
-    overflow: hidden;
-  } */
+  .card-container {
+    overflow: visible;
+  }
   .card {
     position: relative;
     width: 80%;
-    height: 600px;
+    height: 500px;
     transition: all 0.3s ease;
     margin: 0 auto;
   }
@@ -73,6 +73,7 @@ const { guia } = Astro.props;
   }
   .card:hover img:last-child {
     scale: 1.1;
+    transform: translateY(-5%);
   }
   .card:hover .card-container > p {
     transform: translateY(10%);

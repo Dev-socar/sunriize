@@ -18,8 +18,9 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
         alt="Imagen de marco"
         class="absolute top-0 left-0 w-full h-full z-0 object-cover md:object-contain"
       />
+
       <div
-        class="w-full flex justify-center relative text-[5rem] font-rasegard md:text-[9rem] lg:text-[12rem] xl:text-[22rem] -mt-20 md:-mt-28 lg:-mt-36 xl:-mt-64"
+        class="hidden w-full md:flex justify-center relative text-[5rem] font-rasegard md:text-[9rem] lg:text-[12rem] xl:text-[22rem] -mt-20 md:-mt-28 lg:-mt-36 xl:-mt-64"
       >
         Oddyssey
 
@@ -30,6 +31,22 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
             src="/assets/DESTELLO.svg"
             alt="Icono de destello"
             class="size-20 md:size-32 lg:size-40 xl:size-72"
+          />
+        </div>
+      </div>
+
+      <div
+        class="w-full md:hidden flex justify-center relative text-[8rem] font-rasegard -mt-20 leading-[90px]"
+      >
+        Oddy <br />ssey
+
+        <div
+          class="absolute top-[80%] right-1/2"
+        >
+          <img
+            src="/assets/DESTELLO.svg"
+            alt="Icono de destello"
+            class="size-28 "
           />
         </div>
       </div>
@@ -125,7 +142,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
     </div>
   </header>
 
-  <main class="mt-20 ">
+  <main class="mt-20">
     <h2
       class="text-[3.4rem] font-rasegard text-center leading-9 md:text-[3.6rem] lg:text-[4.5rem] xl:text-[8.5rem]"
     >
@@ -153,7 +170,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
         Elige a tu guia para esta aventura:
       </h2>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  mx-auto mt-16 gap-5"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mx-auto mt-16 gap-5"
       >
         {guiasImages.map((guiaImage) => <GuiaImageCard guia={guiaImage} />)}
       </div>

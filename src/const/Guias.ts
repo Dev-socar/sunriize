@@ -3,6 +3,7 @@ import { type Guia } from "@/types/Guia";
 export const guias: Guia[] = [
   {
     nombre: "Osaki Shotaro",
+    image: "/assets/01_SHOTARO.webp",
     tag: "Shotaro",
     alias: "Fire Tornado Hector",
     descripcion:
@@ -11,18 +12,10 @@ export const guias: Guia[] = [
     gustos: "Crear coreografías, cualquier tipo de comida, sus amigos.",
     disgustos: "Ninguno. Shotaro le ve el lado bueno a todo.",
   },
-  {
-    nombre: "Song Eunseok",
-    tag: "Eunseok",
-    alias: "Black Shadow",
-    descripcion:
-      "Tiene el poder de la templanza. No importa si sus compañeros gritan por sus vidas, él permanece sereno... como una roca, encontrando el momento justo para decir una broma, soltar una frase épica o dar el golpe final. Suele pasar las tardes leyendo manga con Sohee.",
-    soundtrack: "#",
-    gustos: "Dad jokes, manga, anime, taekwondo",
-    disgustos: "El volumen de los gritos",
-  },
+
   {
     nombre: "Jung Sungchan",
+    image: "/assets/06_SUNGCHAN.webp",
     tag: "Sungchan",
     alias: "Electric Zephyr",
     descripcion:
@@ -33,6 +26,7 @@ export const guias: Guia[] = [
   },
   {
     nombre: "Park Wonbin",
+    image: "/assets/04_WONBIN.webp",
     tag: "Wonbin",
     alias: "The star of darkness",
     descripcion:
@@ -44,6 +38,7 @@ export const guias: Guia[] = [
   },
   {
     nombre: "Lee Sohee",
+    image: "/assets/03_SOHEE.webp",
     tag: "Sohee",
     alias: "The lord of darkness",
     descripcion:
@@ -54,6 +49,7 @@ export const guias: Guia[] = [
   },
   {
     nombre: "Lee Anton",
+    image: "/assets/05_ANTON.webp",
     tag: "Anton",
     alias: "Healing Michael",
     descripcion:
@@ -61,5 +57,16 @@ export const guias: Guia[] = [
     soundtrack: "#",
     gustos: "Los dinosaurios, componer música, “Wonbin hyung x1000”.",
     disgustos: "La hipocresía, los cuentos de terror, no ver a su hermano.",
+  },
+  {
+    nombre: "Song Eunseok",
+    image: "/assets/02_EUNSEOK.webp",
+    tag: "Eunseok",
+    alias: "Black Shadow",
+    descripcion:
+      "Tiene el poder de la templanza. No importa si sus compañeros gritan por sus vidas, él permanece sereno... como una roca, encontrando el momento justo para decir una broma, soltar una frase épica o dar el golpe final. Suele pasar las tardes leyendo manga con Sohee.",
+    soundtrack: "#",
+    gustos: "Dad jokes, manga, anime, taekwondo",
+    disgustos: "El volumen de los gritos",
   },
 ];

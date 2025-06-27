@@ -3,32 +3,32 @@ import { type GuiaImage } from "@/types/GuiaImage";
 export const guiasImages: GuiaImage[] = [
   {
     tag: "Shotaro",
-    imageBg: "/temp/personaje_card.webp",
-    imageHover: "/temp/personaje_hover.png",
+    imageBg: "/assets/SHOTARO_BG.webp",
+    imageHover: "/assets/SHOTARO_HOVER.webp",
   },
   {
     tag: "Eunseok",
-    imageBg: "/temp/personaje_card.webp",
-    imageHover: "/temp/personaje_hover.png",
+    imageBg: "/assets/EUNSEOK_BG.webp",
+    imageHover: "/assets/EUNSEOK_HOVER.webp",
   },
   {
     tag: "Sungchan",
-    imageBg: "/temp/personaje_card.webp",
-    imageHover: "/temp/personaje_hover.png",
-    },
-    {
-        tag: "Wonbin",
-        imageBg: "/temp/personaje_card.webp",
-        imageHover: "/temp/personaje_hover.png",
-    },
-    {
-        tag: "Sohee",
-        imageBg: "/temp/personaje_card.webp",
-        imageHover: "/temp/personaje_hover.png",
-    },
-    {
-        tag: "Anton",
-        imageBg: "/temp/personaje_card.webp",
-        imageHover: "/temp/personaje_hover.png",
-    }
+    imageBg: "/assets/SUNGCHAN_BG.webp",
+    imageHover: "/assets/SUNGCHAN_HOVER.webp",
+  },
+  {
+    tag: "Wonbin",
+    imageBg: "/assets/WONBIN_BG.webp",
+    imageHover: "/assets/WONBIN_HOVER.webp",
+  },
+  {
+    tag: "Sohee",
+    imageBg: "/assets/SOHEE_BG.webp",
+    imageHover: "/assets/SOHEE_HOVER.webp",
+  },
+  {
+    tag: "Anton",
+    imageBg: "/assets/ANTON_BG.webp",
+    imageHover: "/assets/ANTON_HOVER.webp",
+  },
 ];

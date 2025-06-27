@@ -13,43 +13,41 @@ const { guia } = Astro.props;
   </article>
   <a
     href=`/#${guia.tag}`
-    class="mt-8 text-center inline-block w-full font-robotika text-lg font-semibold underline"
+    class="mt-2 text-center inline-block w-full font-robotika text-lg font-semibold underline relative z-10"
   >
     {guia.tag}
   </a>
 </div>
 
 <style>
-  .card-container {
-    overflow: visible;
-  }
   .card {
     position: relative;
     width: 80%;
-    height: 500px;
+    height: auto;
     transition: all 0.3s ease;
     margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .card img:first-child {
-    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+    width: 80%;
+    height: 80%;
   }
   .card img:last-child {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     transition: all 0.3s ease;
-    scale: 0;
-    margin: auto;
+    opacity: 0;
+    margin: 0 auto;
+    scale: 1.2;
   }
   .card::before {
     content: "";
@@ -60,22 +58,15 @@ const { guia } = Astro.props;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(
-      to bottom,
-      transparent 10%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0) 95%
-    );
+    opacity: 0;
+  }
+  .card:hover img:first-child {
     opacity: 0;
   }
   .card:hover::before {
     opacity: 1;
   }
   .card:hover img:last-child {
-    scale: 1.11;
-    transform: translateY(-5%);
-  }
-  .card:hover .card-container > p {
-    transform: translateY(10%);
+    opacity: 1;
   }
 </style>

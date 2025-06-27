@@ -19,23 +19,21 @@ const { guia, index } = Astro.props;
         class={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} gap-5 lg:gap-10`}
       >
         <div
-          class="flex flex-col items-center gap-2 flex-1 lg:grow-0 lg:basis-auto"
+          class={`flex flex-col ${index % 2 === 0 ? "items-start" : "items-end"}  gap-2 flex-1 lg:grow-0 lg:basis-auto relative `}
         >
-          <p class="uppercase text-white text-center text-[9px] md:text-xs">
-            Soundtrack de transformación
-          </p>
-          <div class="size-32 bg-white md:size-40"></div>
-          <div class="flex flex-col gap-3">
-            <p
-              class="block text-white text-sm font-black md:text-base lg:hidden"
-            >
-              Gustos: <span class="font-normal">{guia.gustos}</span>
-            </p>
-            <p
-              class="block text-white text-sm font-black md:text-base lg:hidden"
-            >
-              Disgustos: <span class="font-normal">{guia.disgustos}</span>
-            </p>
+          <a href="#">
+            <img
+              src="/assets/SOUNDTRACK_TRANSFORMACION.svg"
+              alt="Icono de un boton"
+              class="w-24 h-24 xl:w-28 xl:h-28"
+            />
+          </a>
+          <div class="w-full h-full">
+            <img
+              src={guia.image}
+              alt={guia.alias}
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
 
@@ -50,6 +48,18 @@ const { guia, index } = Astro.props;
           >
             {guia.descripcion}
           </p>
+          <div class="flex flex-col gap-3">
+            <p
+              class="block text-white text-sm font-black md:text-base lg:hidden"
+            >
+              Gustos: <span class="font-normal">{guia.gustos}</span>
+            </p>
+            <p
+              class="block text-white text-sm font-black md:text-base lg:hidden"
+            >
+              Disgustos: <span class="font-normal">{guia.disgustos}</span>
+            </p>
+          </div>
           <div
             class={`flex gap-3 ${index % 2 === 0 ? "justify-start" : "justify-end"} lg:gap-10`}
           >

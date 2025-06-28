@@ -7,12 +7,16 @@ export const guias: Guia[] = [
     tag: "Shotaro",
     alias: "Fire Tornado Hector",
     descripcion:
-      "Líder del club de baile. Le encantan los bowls de açaí por la tarde y golpear maleantes por la noche. Su hobbie es aprenderse coreografías de TikTok y subirlas; se ha hecho viral varias veces. Es un verdadero capitán y un amigo confiable. Ha sido chico mágico desde antes que el resto, junto a Sungchan.",
+      "Shotaro, (Sagitario, ESFP) líder del club de baile y probablemente el más querido del grupo… y de la ciudad que protege. Es fácil caer en sus encantos: sonrisa dulce, mirada brillante, y esa imagen inocente que no pierde ni peleando. Nadie es más protector con su gente que él. Por las tardes te lo encuentras bailando en Tiktok (viralidad garantizada) y en la noche repartiendo golpes a maleantes. Le gusta saber que puede traer paz a la ciudad con su esfuerzo. El fuego arde con fuerza cada vez que sus poderes despiertan. Es un verdadero capitán, un amigo confiable y la chispa que mantiene unido al equipo. Fue chico mágico casi dos años antes que el resto, junto a Sungchan.",
     soundtrack: "https://www.youtube.com/watch?v=b5vM6MfXhVA",
-    gustos: "Crear coreografías, cualquier tipo de comida, sus amigos.",
-    disgustos: "Ninguno. Shotaro le ve el lado bueno a todo.",
-    scale: "scale-[200%] md:scale-[100%] lg:scale-[150%]",
-    position: "md:top-0",
+    gustos:
+      "Crear coreografías, cualquier tipo de comida, sus amigos, bailar, açaí bowls.",
+    disgustos:
+      "El mal, que lo quieran pasar por encima de él, que no aprecien a sus chicos y sus sacrificios.",
+    scale: "scale-[250%] md:scale-[180%] lg:scale-[150%] xl:scale-[140%]",
+    position: "md:-bottom-0",
+    translate:
+      "translate-y-full -translate-x-24 md:translate-y-10 md:-translate-x-24 lg:translate-y-2 xl:-translate-y-10",
   },
 
   {
@@ -21,12 +25,15 @@ export const guias: Guia[] = [
     tag: "Sungchan",
     alias: "Electric Zephyr",
     descripcion:
-      "Líder del club de baile. Le encantan los bowls de açaí por la tarde y golpear maleantes por la noche. Su hobbie es aprenderse coreogra f ías de TikTok y subirlas; se ha hecho viral varias veces. Es un verdadero capitán y un amigo confiable. Ha sido chico mágico desde antes que el resto, junto a Sungchan.",
+      "Jung Sungchan (Virgo, ESTP) es una azucena en flor: hermoso, vibrante, un descanso para la vista de cualquiera y, aun así, increíblemente fuerte y resiliente. Sus músculos, tan confiables como su corazón, pueden llegar a ser intimidantes, pero detrás de ese gigante se esconde una sonrisa tierna, siempre dispuesto a sacrificarse por cualquiera de su equipo; los considera su familia lejos del hogar. Protege a todos con rayos que cortan el cielo; es la espina dorsal del equipo. Suelen decir que es el “papá”. Todos creen que es invencible… hasta que el enemigo toma forma de fantasma. Ahí prefiere dejarle el asunto a Eunseok.",
     soundtrack: "https://www.youtube.com/watch?v=XO8Wb0sh6sU",
-    gustos: "Que le digan “Jinsu”, el gimnasio, las hamburguesas.",
-    disgustos: "Películas de terror, no tener a Shotaro cerca.",
-    scale: "scale-[200%] md:scale-[100%] lg:scale-[130%]",
-    position: "md:top-0",
+    gustos: "Hacer ejercicio, el fútbol y las hamburguesas.",
+    disgustos:
+      "Las personas que acosan, que son groseras, terror y fantasmas y no ver a Shotaro.",
+    scale: "scale-[230%] md:scale-[150%] lg:scale-[130%] xl:scale-[110%]",
+    position: "md:bottom-0",
+    translate:
+      "translate-y-[70%] translate-x-20 md:translate-x-0 md:-translate-y-5 lg:-translate-y-5 xl:-translate-y-20",
   },
   {
     nombre: "Song Eunseok",
@@ -34,12 +41,15 @@ export const guias: Guia[] = [
     tag: "Eunseok",
     alias: "Black Shadow",
     descripcion:
-      "Tiene el poder de la templanza. No importa si sus compañeros gritan por sus vidas, él permanece sereno... como una roca, encontrando el momento justo para decir una broma, soltar una frase épica o dar el golpe final. Suele pasar las tardes leyendo manga con Sohee.",
+      "Eunseok (Piscis, ISTP) con su equilibrio y autocontrol, es, sin dudarlo, la joya del equipo. Aun si sus compañeros gritan de pánico, él será la voz calmada. Paciente, perseverante, Eunseok se esfuerza, sabiendo que cada movimiento será clave para un mejor futuro, quizá por eso su poder sea controlar las sombras, su risa y su tranquilidad hacen que el equipo se mantenga unido, evitando las discusiones. Eunseok siempre estará ahí cuando lo necesites, preparado para dar el golpe final… o quizá soltar el peor chiste que hayas escuchado en años. Los mangas son algo que lo une a Sohee y a Anton, volviéndolos un equipo... curioso.",
     soundtrack: "https://www.youtube.com/watch?v=XBL44lrLvT8",
-    gustos: "Dad jokes, manga, anime, taekwondo",
-    disgustos: "El volumen de los gritos",
-    scale: "scale-[150%] md:scale-[75%] lg:scale-[100%]",
-    position: "md:-top-24",
+    gustos:
+      "Dad jokes, manga, videojuegos, taekwondo, batidos de fresa, dumplings.",
+    disgustos: " Irresponsabilidad, que lo logren sacar de quicio",
+    scale: "scale-[170%] md:scale-[130%] lg:scale-[100%] xl:scale-[95%]",
+    position: "md:bottom-0",
+    translate:
+      "translate-y-32 -translate-x-[30px] md:-translate-y-20 md:translate-x-0 lg:-translate-y-20 xl:-translate-y-40",
   },
   {
     nombre: "Park Wonbin",
@@ -47,13 +57,15 @@ export const guias: Guia[] = [
     tag: "Wonbin",
     alias: "The star of darkness",
     descripcion:
-      "Park Wonbin es parte del equipo de atletismo, pero eso no impide que también esté intentando alcanzar una nota perfecta o bailando con Shotaro. Cuando no está haciendo eso, probablemente está en la calle, usando el poder de las estrellas para mantener el orden. Porque el mal no solo viene del espacio... ¿sabes?",
+      "Park Wonbin (Piscis, INFJ) es una estrella. El universo sabía que había nacido para brillar: atractivo, curioso, apasionado, siempre dispuesto a aprender y con talento para casi todo lo que toca. Pero también fue bendecido con humildad, un corazón bondadoso lleno de deseo de justicia. Quizá por eso se le dio el poder de las estrellas colapsando… y, al mismo tiempo, el corazón de un miedoso de primera. Wonbin forma parte del club de guitarra. Y cuando no está tocando o aprendiendo algo nuevo, probablemente está en la calle, usando el poder de las estrellas para mantener el orden. Porque el mal no solo viene del espacio… ¿sabes?",
     soundtrack: "https://www.youtube.com/watch?v=YtaJn17nHgU",
-    gustos: "La guitarra, los juegos relajantes, dormir.",
+    gustos: "La guitarra, los juegos relajantes, cantar, bailar, dormir.",
     disgustos:
-      "Los perros grandes, las alturas, las peliculas de terror, los zombies, los fantasmas, los...",
-    scale: "scale-[200%] md:scale-[110%] lg:scale-[150%]",
-    position: "md:top-0",
+      "Los perros grandes, las alturas, películas de terror, los zombies, los fantasmas, los lugares oscuros, los lugares abandonados, los…",
+    scale: "scale-[230%] md:scale-[180%] lg:scale-[150%] xl:scale-[130%]",
+    position: "md:bottom-0",
+    translate:
+      "translate-y-[110%] translate-x-[80px] md:translate-y-10 md:translate-x-24 lg:translate-y-0 xl:-translate-y-14 xl:translate-x-1/2",
   },
   {
     nombre: "Lee Sohee",
@@ -61,12 +73,14 @@ export const guias: Guia[] = [
     tag: "Sohee",
     alias: "The lord of darkness",
     descripcion:
-      "El canto de Lee Sohee es tan legendario que se volvió su arma. Literalmente. Y con el poder que tiene su voz, es un alivio para todos que no se meta en los asuntos de nadie (excepto en los de Anton), porque como él mismo dice: “¡Jamás retrocederé a mi palabra, ese es mi camino de... chico mágico!”",
+      "El canto de Lee Sohee (Escorpio, ISTP) es tan legendario que se volvió su arma. Hasta que se dio cuenta de que también podía usarlo para provocar alegría, no solo para pelear contra el mal. La luz que lleva a cada habitación al entrar es tan fuerte, que Eunseok lo llama de forma irónica “The lord of the darkness”. Ddori es un soñador que no se detiene ante nada si se trata de darle a la ciudad (y a quienes ama) un día más con una con la oportunidad de ser feliz. Es un alivio para todos que no se meta en los asuntos de nadie (excepto en los de Anton), porque, como él mismo dice: “¡Jamás retrocederé a mi palabra, ese es mi camino de… chico mágico!”",
     soundtrack: "https://www.youtube.com/watch?v=lNmBNXR5mKk",
     gustos: "Leer mangas con Eunseok, Naruto, molestar a Anton.",
     disgustos: "El hate sin sentido, el aburrimiento.",
-    scale: "scale-[200%] md:scale-[120%] lg:scale-[170%]",
-    position: "md:top-0",
+    scale: "scale-[250%] md:scale-[200%] lg:scale-[170%]",
+    position: "md:bottom-0",
+    translate:
+      "translate-y-[240px] -translate-x-[95px] md:translate-y-5 md:-translate-x-32 lg:translate-y-16 lg:-translate-x-10 xl:translate-y-0 ",
   },
   {
     nombre: "Lee Anton",
@@ -74,11 +88,13 @@ export const guias: Guia[] = [
     tag: "Anton",
     alias: "Healing Michael",
     descripcion:
-      "Lee Anton es lo que tu papá soñaba que fueras: buen estudiante, toca el chelo, la guitarra, el bajo, sabe cantar, bailar y es campeón estatal de natación. Sería el más popular de la escuela... si tan solo hablara un poco más fuerte. Pero detrás de ese susurro se esconde el miembro más valiente de RIIZE.",
+      "Lee Anton (Aries, INTP) es lo que tu papá soñaba que fueras: buen estudiante, toca el chelo, la guitarra, el bajo, canta, baila y es campeón estatal de natación. Sería el más popular de la escuela… si tan solo hablara un poco más fuerte. Es un cachorro enorme. Anton es la batería del equipo; quizá por eso el universo le dio el poder de la curación. Pero no dejes que su preciosa carita te engañe: ese poder es aterrador. Como también lo es su forma de mantener la frente en alto, pase lo que pase. Detrás de ese chico empático y tímido se asoma el miembro más valiente de RIIZE… a menos que hables sobre fantasmas y cosas aterradoras, ahí ya no juega.",
     soundtrack: "https://www.youtube.com/watch?v=vmL-XgxwQZU",
     gustos: "Los dinosaurios, componer música, “Wonbin hyung x1000”.",
     disgustos: "La hipocresía, los cuentos de terror, no ver a su hermano.",
-    scale: "scale-[200%] md:scale-[120%] lg:scale-[150%]",
-    position: "md:top-0",
+    scale: "scale-[240%] md:scale-[180%] lg:scale-[150%] xl:scale-[130%]",
+    position: "md:bottom-0",
+    translate:
+      "translate-y-52 translate-x-24 md:translate-y-10 md:translate-x-24 lg:translate-y-5 lg:translate-x-5 xl:-translate-y-10",
   },
 ];

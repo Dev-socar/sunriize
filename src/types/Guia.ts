@@ -9,4 +9,5 @@ export type Guia = {
     disgustos: string,
     scale?: string;
     position?: string;
+    translate?: string;
 }

@@ -7,4 +7,6 @@ export type Guia = {
     soundtrack: string;
     gustos: string,
     disgustos: string,
+    scale?: string;
+    position?: string;
 }

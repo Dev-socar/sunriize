@@ -7,7 +7,7 @@ interface Props {
 const { guia, index } = Astro.props;
 ---
 
-<article id={guia.tag}>
+<article id={guia.tag} class="overflow-x-hidden bg-red-200 md:min-h-[600px]">
   <h2
     class={`text-[2.2rem] font-rasegard leading-7 md:leading-12  ${index % 2 === 0 ? "text-left" : "text-right"} md:text-[4.5rem] xl:text-[5.5rem] xl:leading-16`}
   >
@@ -19,25 +19,27 @@ const { guia, index } = Astro.props;
         class={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} gap-5 lg:gap-10`}
       >
         <div
-          class={`flex flex-col ${index % 2 === 0 ? "items-start" : "items-end"}  gap-2 flex-1 lg:grow-0 lg:basis-auto relative `}
+          class={`flex flex-col ${index % 2 === 0 ? "items-start" : "items-end"}  gap-2 flex-1 lg:w-1/2 lg:grow-0 lg:basis-auto relative `}
         >
           <a href="#">
             <img
               src="/assets/SOUNDTRACK_TRANSFORMACION.svg"
               alt="Icono de un boton"
-              class="w-24 h-24 xl:w-28 xl:h-28"
+              class={`w-24 h-24 xl:w-28 xl:h-28 relative z-20 lg:absolute lg:bottom-0 ${index % 2 === 0 ? "" : "lg:right-0"}`}
             />
           </a>
-          <div class="w-full h-full">
+          <div
+            class="w-full h-full lg:flex lg:items-end lg:justify-center relative"
+          >
             <img
               src={guia.image}
               alt={guia.alias}
-              class="w-full h-full object-cover"
+              class={`absolute z-10  ${guia.scale}   ${index % 2 === 0 ? "-translate-x-10" : "translate-x-10"} lg:w-[80%] xl:w-1/2 top-24 md:top-0 -translate-y-1/5 ${guia.position} `}
             />
           </div>
         </div>
 
-        <div class="flex flex-col gap-2 flex-1 justify-center">
+        <div class="flex flex-col gap-2 flex-1 justify-center lg:w-1/2">
           <h2
             class={`text-white font-black text-2xl ${index % 2 === 0 ? "text-left" : "text-right"} md:text-3xl lg:text-4xl xl:text-5xl`}
           >

@@ -13,7 +13,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
   <header class="overflow-x-hidden overflow-y-hidden">
     <Marquee />
     <div
-      class="relative z-10 mt-10 py-10 pb-20 md:pb-0 md:h-[1800px] lg:h-[2300px] xl:mt-20"
+      class="relative z-10 mt-10 py-10 pb-20 md:pb-0 md:h-[1800px] lg:h-[2300px] xl:h-[3600px] xl:mt-20"
     >
       <img
         src="/assets/MARCO.svg"
@@ -48,7 +48,9 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
             class="w-full h-full object-cover"
           />
         </div>
-        <div class="bottom-0 absolute z-10 w-full h-[250px] md:h-auto xl:translate-y-32">
+        <div
+          class="bottom-0 absolute z-10 w-full h-[250px] md:h-auto xl:translate-y-32"
+        >
           <div class="w-full h-full relative">
             <img
               src="/assets/NUBE.webp"
@@ -168,7 +170,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
 
   <main class="mt-20">
     <h2
-      class="text-[5rem] font-rasegard leading-16 text-center md:text-[4.4rem] lg:text-[4.5rem] xl:text-[8.5rem]"
+      class="text-[5rem] font-rasegard leading-16 text-center md:text-[4.4rem] lg:text-[5.5rem] xl:text-[8.5rem]"
     >
       ¡comienza tu odisea!
     </h2>
@@ -177,7 +179,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
       <img src="/assets/VIDEO.svg" alt="Icono de video" class="w-16 h-16" />
       <a
         href="https://www.youtube.com/watch?v=vLUtHODdLzk"
-        class="text-[1rem] md:text-[1.2rem] block w-[60%] md:w-fit hover:underline font-robotika xl:text-[1.5rem]"
+        class="text-[1rem] md:text-[1.2rem] block w-[60%] md:w-fit hover:underline font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
         target="_blank"
         rel="noopener noreferrer"
         title="Escucha el opening de RIIZE"
@@ -189,7 +191,7 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
 
     <div class="mt-16">
       <h2
-        class="text-[1rem] md:text-[1.2rem] font-robotika text-center font-bold xl:text-[1.8rem]"
+        class="text-[1rem] md:text-[1.2rem] font-robotika text-center font-bold lg:text-[1.5rem] xl:text-[1.8rem]"
       >
         Elige a tu guía para esta aventura:
       </h2>
@@ -210,15 +212,26 @@ import GuiaImageCard from "@/components/GuiaImageCard.astro";
       class="text-center text-[1rem] md:text-[1.2rem] font-robotika lg:text-[1.5rem] xl:text-[1.8rem]"
     >
       ¿Te gustaría conocer más de su historia? Da click <a
-        href="#"
+        href="https://www.youtube.com/playlist?list=PLVtDfG0ugTx5fFqLqhufgCz32lADEPXD6"
+        rel="noopener noreferrer"
+        target="_blank"
         class="font-semibold underline">aquí</a
-      > o <a href="#" class="font-semibold underline">aquí</a> para conocerlos más.
+      > o <a
+        href="https://www.youtube.com/playlist?list=PLVtDfG0ugTx5pAKH6pOaoSkL3VsqolVKU"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="font-semibold underline">aquí</a
+      > para conocerlos más.
     </p>
     <p
       class="text-center text-[1rem] md:text-[1.2rem] font-robotika mt-5 lg:text-[1.5rem] xl:text-[1.8rem]"
     >
-      <span class="underline font-semibold"
-        >Ten tu varita de transformación</span
+      <a
+        href="https://drive.google.com/file/d/1cTyM-TA8v3kst33Tcfx-LLmiRpu21NEE/view?usp=drive_link"
+        rel="noopener noreferrer"
+        target="_blank"
+        aria-label="Descarga tu varita de transformación"
+        class="underline font-semibold">Ten tu varita de transformación</a
       >
       ¡Y bienvenid@ al equipo!
     </p>

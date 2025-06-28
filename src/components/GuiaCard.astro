@@ -7,7 +7,7 @@ interface Props {
 const { guia, index } = Astro.props;
 ---
 
-<article id={guia.tag} class="overflow-x-hidden md:min-h-[550px]">
+<article id={guia.tag} class="overflow-hidden md:min-h-[550px]">
   <h2
     class={`text-[2.2rem] font-rasegard leading-7 md:leading-12  ${index % 2 === 0 ? "text-left" : "text-right"} md:text-[4.5rem] xl:text-[5.5rem] xl:leading-16`}
   >
@@ -63,7 +63,7 @@ const { guia, index } = Astro.props;
             </p>
           </div>
           <div
-            class={`flex gap-3 ${index % 2 === 0 ? "justify-start" : "justify-end"} lg:gap-10`}
+            class={`mt-10 flex flex-col gap-3 ${index % 2 === 0 ? "items-start" : "items-end"} lg:gap-10`}
           >
             <p
               class="hidden text-white text-sm font-black md:text-base lg:block xl:text-xl"

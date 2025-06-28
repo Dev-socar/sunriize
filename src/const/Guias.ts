@@ -11,8 +11,8 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=b5vM6MfXhVA",
     gustos: "Crear coreografías, cualquier tipo de comida, sus amigos.",
     disgustos: "Ninguno. Shotaro le ve el lado bueno a todo.",
-    scale: "scale-[200%] md:scale-[100%]",
-    position: "bottom-0",
+    scale: "scale-[200%] md:scale-[100%] lg:scale-[150%]",
+    position: "md:top-0",
   },
 
   {
@@ -25,7 +25,8 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=XO8Wb0sh6sU",
     gustos: "Que le digan “Jinsu”, el gimnasio, las hamburguesas.",
     disgustos: "Películas de terror, no tener a Shotaro cerca.",
-    scale: "scale-[200%] md:scale-[100%]",
+    scale: "scale-[200%] md:scale-[100%] lg:scale-[130%]",
+    position: "md:top-0",
   },
   {
     nombre: "Song Eunseok",
@@ -37,8 +38,8 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=XBL44lrLvT8",
     gustos: "Dad jokes, manga, anime, taekwondo",
     disgustos: "El volumen de los gritos",
-    scale: "scale-[150%] md:scale-[75%]",
-    position: "",
+    scale: "scale-[150%] md:scale-[75%] lg:scale-[100%]",
+    position: "md:-top-24",
   },
   {
     nombre: "Park Wonbin",
@@ -51,7 +52,8 @@ export const guias: Guia[] = [
     gustos: "La guitarra, los juegos relajantes, dormir.",
     disgustos:
       "Los perros grandes, las alturas, las peliculas de terror, los zombies, los fantasmas, los...",
-    scale: "scale-[200%] md:scale-[110%]",
+    scale: "scale-[200%] md:scale-[110%] lg:scale-[150%]",
+    position: "md:top-0",
   },
   {
     nombre: "Lee Sohee",
@@ -63,7 +65,8 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=lNmBNXR5mKk",
     gustos: "Leer mangas con Eunseok, Naruto, molestar a Anton.",
     disgustos: "El hate sin sentido, el aburrimiento.",
-    scale: "scale-[200%] md:scale-[120%]",
+    scale: "scale-[200%] md:scale-[120%] lg:scale-[170%]",
+    position: "md:top-0",
   },
   {
     nombre: "Lee Anton",
@@ -75,6 +78,7 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=vmL-XgxwQZU",
     gustos: "Los dinosaurios, componer música, “Wonbin hyung x1000”.",
     disgustos: "La hipocresía, los cuentos de terror, no ver a su hermano.",
-    scale: "scale-[200%] md:scale-[120%]",
+    scale: "scale-[200%] md:scale-[120%] lg:scale-[150%]",
+    position: "md:top-0",
   },
 ];

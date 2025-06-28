@@ -24,7 +24,7 @@ export const guiasImages: GuiaImage[] = [
   {
     tag: "Sohee",
     imageBg: "/assets/SOHEE_BG.webp",
-    imageHover: "/assets/SOHEE_HOVER.webp",
+    imageHover: "/assets/SOHEE_HOVER.png",
   },
   {
     tag: "Anton",

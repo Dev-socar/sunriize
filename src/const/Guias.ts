@@ -13,10 +13,10 @@ export const guias: Guia[] = [
       "Crear coreografías, cualquier tipo de comida, sus amigos, bailar, açaí bowls.",
     disgustos:
       "El mal, que lo quieran pasar por encima de él, que no aprecien a sus chicos y sus sacrificios.",
-    scale: "scale-[250%] md:scale-[180%] lg:scale-[150%] xl:scale-[140%]",
+    scale: "scale-[100%] md:scale-[180%] lg:scale-[150%] xl:scale-[140%]",
     position: "md:-bottom-0",
     translate:
-      "translate-y-full -translate-x-24 md:translate-y-10 md:-translate-x-24 lg:translate-y-2 xl:-translate-y-10",
+      "md:translate-y-10 md:-translate-x-24 lg:translate-y-2 xl:-translate-y-10",
   },
 
   {
@@ -30,10 +30,10 @@ export const guias: Guia[] = [
     gustos: "Hacer ejercicio, el fútbol y las hamburguesas.",
     disgustos:
       "Las personas que acosan, que son groseras, terror y fantasmas y no ver a Shotaro.",
-    scale: "scale-[230%] md:scale-[150%] lg:scale-[130%] xl:scale-[110%]",
+    scale: "scale-[100%] md:scale-[150%] lg:scale-[130%] xl:scale-[110%]",
     position: "md:bottom-0",
     translate:
-      "translate-y-[70%] translate-x-20 md:translate-x-0 md:-translate-y-5 lg:-translate-y-5 xl:-translate-y-20",
+      "md:translate-x-0 md:-translate-y-5 lg:-translate-y-5 xl:-translate-y-20",
   },
   {
     nombre: "Song Eunseok",
@@ -46,10 +46,10 @@ export const guias: Guia[] = [
     gustos:
       "Dad jokes, manga, videojuegos, taekwondo, batidos de fresa, dumplings.",
     disgustos: " Irresponsabilidad, que lo logren sacar de quicio",
-    scale: "scale-[170%] md:scale-[130%] lg:scale-[100%] xl:scale-[95%]",
+    scale: "scale-[90%] md:scale-[130%] lg:scale-[100%] xl:scale-[95%]",
     position: "md:bottom-0",
     translate:
-      "translate-y-32 -translate-x-[30px] md:-translate-y-20 md:translate-x-0 lg:-translate-y-20 xl:-translate-y-40",
+      "md:-translate-y-20 md:translate-x-0 lg:-translate-y-20 xl:-translate-y-40",
   },
   {
     nombre: "Park Wonbin",
@@ -62,10 +62,10 @@ export const guias: Guia[] = [
     gustos: "La guitarra, los juegos relajantes, cantar, bailar, dormir.",
     disgustos:
       "Los perros grandes, las alturas, películas de terror, los zombies, los fantasmas, los lugares oscuros, los lugares abandonados, los…",
-    scale: "scale-[230%] md:scale-[180%] lg:scale-[150%] xl:scale-[130%]",
+    scale: "scale-[100%] md:scale-[180%] lg:scale-[150%] xl:scale-[130%]",
     position: "md:bottom-0",
     translate:
-      "translate-y-[110%] translate-x-[80px] md:translate-y-10 md:translate-x-24 lg:translate-y-0 xl:-translate-y-14 xl:translate-x-1/2",
+      "translate-x-5 md:translate-y-10 md:translate-x-24 lg:translate-y-0 xl:-translate-y-14 xl:translate-x-1/2",
   },
   {
     nombre: "Lee Sohee",
@@ -77,10 +77,10 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=lNmBNXR5mKk",
     gustos: "Leer mangas con Eunseok, Naruto, molestar a Anton.",
     disgustos: "El hate sin sentido, el aburrimiento.",
-    scale: "scale-[250%] md:scale-[200%] lg:scale-[170%]",
+    scale: "scale-[110%] md:scale-[200%] lg:scale-[170%]",
     position: "md:bottom-0",
     translate:
-      "translate-y-[240px] -translate-x-[95px] md:translate-y-5 md:-translate-x-32 lg:translate-y-16 lg:-translate-x-10 xl:translate-y-0 ",
+      "md:translate-y-5 md:-translate-x-32 lg:translate-y-16 lg:-translate-x-10 xl:translate-y-0 ",
   },
   {
     nombre: "Lee Anton",
@@ -92,9 +92,9 @@ export const guias: Guia[] = [
     soundtrack: "https://www.youtube.com/watch?v=vmL-XgxwQZU",
     gustos: "Los dinosaurios, componer música, “Wonbin hyung x1000”.",
     disgustos: "La hipocresía, los cuentos de terror, no ver a su hermano.",
-    scale: "scale-[240%] md:scale-[180%] lg:scale-[150%] xl:scale-[130%]",
+    scale: "scale-[100%] md:scale-[180%] lg:scale-[150%] xl:scale-[130%]",
     position: "md:bottom-0",
     translate:
-      "translate-y-52 translate-x-24 md:translate-y-10 md:translate-x-24 lg:translate-y-5 lg:translate-x-5 xl:-translate-y-10",
+      "md:translate-y-10 md:translate-x-24 lg:translate-y-5 lg:translate-x-5 xl:-translate-y-10",
   },
 ];

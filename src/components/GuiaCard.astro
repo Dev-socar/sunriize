@@ -16,7 +16,7 @@ const { guia, index } = Astro.props;
   <div class="bg-black p-5 font-robotika lg:h-[680px] xl:overflow-hidden">
     <div class="border-2 border-white rounded-2xl p-5 lg:h-full">
       <div
-        class={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} gap-5 lg:gap-10 lg:h-full`}
+        class={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-5 lg:gap-10 lg:h-full`}
       >
         <div
           class={`flex flex-col ${index % 2 === 0 ? "items-start" : "items-end"}  gap-2 flex-1 lg:w-1/2 lg:grow-0 lg:basis-auto relative lg:h-full `}
@@ -34,30 +34,30 @@ const { guia, index } = Astro.props;
             <img
               src={guia.image}
               alt={guia.alias}
-              class={`absolute z-10  ${guia.scale}   ${index % 2 === 0 ? "-translate-x-18" : "translate-x-16"} lg:w-[80%] xl:w-1/2 top-24  -translate-y-1/5 ${guia.position ?? "bottom-0"} ${guia.translate}`}
+              class={`md:absolute z-10  ${guia.scale}   ${index % 2 === 0 ? "md:-translate-x-18" : "md:translate-x-16"} lg:w-[80%] xl:w-1/2 top-24  md:-translate-y-1/5 ${guia.position ?? "md:bottom-0"} ${guia.translate}`}
             />
           </div>
         </div>
 
         <div class="flex flex-col gap-2 flex-1 justify-center lg:w-1/2">
           <h2
-            class={`text-white font-black text-2xl ${index % 2 === 0 ? "text-left" : "text-right"} md:text-3xl lg:text-4xl xl:text-5xl`}
+            class={`text-white font-black text-center text-2xl ${index % 2 === 0 ? "md:text-left" : "md:text-right"} md:text-3xl lg:text-4xl xl:text-5xl`}
           >
             {guia.nombre}
           </h2>
           <p
-            class={`text-white text-sm md:text-lg ${index % 2 === 0 ? "text-left" : "text-right"} xl:text-2xl`}
+            class={`text-white text-sm text-center md:text-lg ${index % 2 === 0 ? "md:text-left" : "md:text-right"} xl:text-2xl`}
           >
             {guia.descripcion}
           </p>
           <div class="flex flex-col gap-3">
             <p
-              class="block text-white text-sm font-black md:text-base lg:hidden"
+              class="block text-white text-sm text-center font-black md:text-base lg:hidden"
             >
               Gustos: <span class="font-normal">{guia.gustos}</span>
             </p>
             <p
-              class="block text-white text-sm font-black md:text-base lg:hidden"
+              class="block text-white text-sm font-black text-center md:text-base lg:hidden"
             >
               Disgustos: <span class="font-normal">{guia.disgustos}</span>
             </p>
